@@ -12,16 +12,22 @@ class School
 
 
   def add_student(name, grade)
-    if @roster[:grade].empty?
-      @roster[:grade] = []
+
+    if  !(@roster.include?(grade))
+      @roster[grade] = []
     end
-  @roster[:grade] << name
+  @roster[grade] << name
   end
 
   def grade(grade)
-    @roster[:grade]
+    @roster[grade]
   end
 
-
+  def sort
+    # @roster.each do
+    #   @roster[grade].sort!
+    # end
+    @roster
+  end
 
 end
