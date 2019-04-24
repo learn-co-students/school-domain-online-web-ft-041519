@@ -12,7 +12,6 @@ class School
 
 
   def add_student(name, grade)
-
     if  !(@roster.include?(grade))
       @roster[grade] = []
     end
