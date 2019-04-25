@@ -17,6 +17,10 @@ class School
   end
   
   def sort
-    roster.each {|key, value| value.sort!}
+    new_var = {}
+    roster.each do |key, value|
+      new_var[key] = value.sort
+    end
+    new_var
   end
 end
