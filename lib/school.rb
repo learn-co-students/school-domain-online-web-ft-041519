@@ -15,8 +15,8 @@ attr_reader :name, :roster
   end
  end
  
- def grade(grade)
-   @roster[grade]
+ def grade(grade)  #arg is an array of a grade
+   @roster[grade]     #using argument
   end
 
   def sort
